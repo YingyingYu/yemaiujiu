@@ -1,0 +1,1368 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>商品详细信息</title>
+		<link rel="stylesheet" type="text/css" href="../css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/details.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/header_details.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/sidebar.css"/>
+		<link rel="shortcut icon" type="image/ico" href="../img/favicon.ico">
+		<script type="text/javascript" src="../js/jQuery/jquery-1.4.4.min.js" ></script>
+		<script type="text/javascript" src="../js/header-full.js" ></script>
+		<script type="text/javascript" src="../js/detail.js" ></script>
+	</head>
+
+	<body>
+		<!-- header (全) -->
+		<div id="header" class="header">
+			<div class="head-bar">
+		    	<div class="site-bar"> 
+					<ul class="userinfos"></ul> 
+					<ul class="sitelinks"> 
+			 			<li class="myclub"><a href="#" target="_blank" group1="ad">会员俱乐部</a></li> 
+			  			<li class="sign_up bldr bold"><a group2="1444" group1="ad" href="javascript:;" data-dts="IT.6">签到</a></li> 
+			 			<li class="dropdown myaccount bldr"> <a href="#" class="txt-down" rel="me nofollow" data-dts="IT.7" group1="ad">我的账户</a> 
+					  		<ul> 
+							    <li><a href="#" rel="nofollow" data-dts="IT.71" group1="ad">我的订单<em></em></a></li> 
+							    <li><a href="#" rel="nofollow" data-dts="IT.72" group1="ad">我的存酒库<em></em></a></li> 
+							    <li><a href="#" rel="nofollow" data-dts="IT.73" group1="ad">我的优惠券<em></em></a></li> 
+							    <li><a href="#" rel="nofollow" data-dts="IT.74" group1="ad">我的收藏夹<em></em></a></li> 
+						    </ul> 
+						    <b class="arrow-top"></b> 
+			 			</li> 
+			  			<li class="bldr dropdown app-download"> <a href="#" target="_blank" class="txt-mobile" data-dts="IT.8" group1="ad">手机版</a> 
+			  				<ul class=""> 
+			   					<li class="app-top">APP首单 <span class="red">满100得100</span></li> 
+			    				<li class="app-center"> 
+								    <dl> 
+									    <dt>
+									    	<img alt="手机app二维码" src="../img/indexImages/red-code.png">
+									    </dt> 
+									    <dd> 
+									    	<h2>下载也买酒客户端</h2> 
+										    <a href="#" class="mb10" group1="ad"><img alt="也买酒苹果版app" src="../img/indexImages/ios.png"></a> 
+										    <a href="#" group1="ad"><img alt="也买酒安卓版app" src="../img/indexImages/android.png"></a> 
+									    </dd> 
+								    </dl> 
+			    				</li> 	
+			   					<li class="app-bottom"> <a href="#" target="_blank" group1="ad">了解更多客户端优惠！</a> </li> 
+	   						</ul> 
+	   						<b class="arrow-top"></b> 
+			  			</li>  
+						<li class="bldr"><a href="#" target="_blank" rel="nofollow" data-dts="IT.9" group1="ad">红酒交易中心</a></li> 
+						<li class="bldr dropdown myservice"> <a href="#" class="txt-down" rel="me nofollow" data-dts="IT.10" group1="ad">也买服务</a> <p style="width:140px"> <a href="http://www.yesmywine.com/topic/tasting/01483.html" target="_blank" data-dts="IT.101" group1="ad">品酒会</a><br> <a href="http://www.yesmywine.com/marketing/jiuku/jiukuShuoM.html" target="_blank" data-dts="IT.102" group1="ad">存酒库</a> | <a href="http://www.yesmywine.com/giftlist/lipinka/" target="_blank" data-dts="IT.103" group1="ad">礼品卡</a><br> <a href="http://vip.yesmywine.com/integral.html" target="_blank" data-dts="IT.106" group1="ad">积分商城</a><br> <a href="http://www.yesmywine.com/weMagazine/" target="_blank" data-dts="IT.107" group1="ad">《葡萄酒爱好者》</a><br> <a href="javascript:;" group1="ad">客服：4008208060</a> </p> <b class="arrow-top"></b> </li> 
+						<li class="bldr"><a class="bold" target="_blank" href="#" data-dts="IT.13" group1="ad">设置勿扰</a></li> 
+					</ul> 
+				</div>
+			</div>
+			<div class="head-main">
+		    	<div class="head-logo"> 
+		 			<a href="#" class="logo-site" data-dts="ID2" group1="ad" group2="1443">也买酒</a> 
+				</div> 
+				<span class="reg-gift" style=" width: 163px; height: 100px; margin: 0px; background: transparent url(../img/indexImages/logo.png) no-repeat 0px 0px;float: left;" group1="ad"></span>
+				<div class="head-right">
+					<div class="head-search">
+						<form id="headSearch" data-dts="I1" name="headerSearch" action="#" target="_self">
+							<input type="text" class="txt-keyword" maxlength="50" name="q" value="" placeholder="输入你要查找的商品名称" autocomplete="off">
+							<input type="submit" class="btn-search" value="搜索"> 
+						</form>
+						<p data-dts="I2">
+							<a href="#" rel="nofollow" title="薄若莱2016年新酒" target="_blank">薄若莱2016年新酒</a>
+							<a href="#" rel="nofollow" title="名庄酒" target="_blank">名庄酒</a>
+							<a href="#" rel="nofollow" title="特色陈年老酒" target="_blank">特色陈年老酒</a>
+							<a style="display:none; " class="hotSearchKeyChenDu" href="#" rel="nofollow" title="成都闪电送" target="_blank">成都闪电送</a>
+						</p>
+					</div>
+					<div class="head-shopcart" data-dts="C1">
+					<a href="showCart.html" class="btn-shopcart" rel="nofollow">购物车</a>
+					<span class="txt-cartcount" style="display: none;">0</span>
+					<div class="shopcart-list">
+						<!--<div class="empty">您的购物车内暂时没有商品，去<a href="#">首页</a>挑选</div>-->
+					</div>
+				</div>
+				</div>
+			</div>
+			<div class="head-nav">
+				<div class="site-nav">
+			    	<ul class="navLinks" style="overflow:hidden"> 
+						<li folder="/index" class="on"><a href="../index.html" data-dts="IN.2" group1="ad">首 页</a></li> 
+						<li folder="/marketing/sales" class=""> <a href="#" data-dts="IN.3" group1="ad" group2="1309">超值抢购</a> </li> 
+						<li folder="/flash/index"><a href="#" data-dts="IN.4" group1="ad">精品闪购 </a></li> 
+						<li folder="/cms/cmsV1/grandcru"><a href="#" data-dts="IN.6" group1="ad">名庄特卖</a></li> 					 
+						<li folder="/z65-a2/"><a href="#" data-dts="IN.8" group1="ad">香港免税</a></li> 
+						<li folder="/gjg/index.jspa" style="position:relative"> <a href="#" data-dts="IN.7" group1="ad" style=" padding-right:30px; padding-left:15px" target="_blank">老酒馆</a> <span style="position:absolute; width:23px; height:11px;background:url(../img/indexImages/new.png); color:#7E0001; top:5px; right:5px; "></span> </li> 
+						<li folder="/marketing/topic/"> <a href="#" data-dts="IN.8" target="_blank" group1="ad">企业采购</a> </li> 
+						<li folder="/marketing/topic/" class="last"> <a href="#" data-dts="IN.8" target="_blank" group1="ad">全球海淘</a> </li> 					 
+						<li folder="/marketing/topic/" class="last hidden" id="chendu"><a href="#" style="position:relative;z-index:50;padding:0 35px 0 20px" group1="ad">成都闪电送<span style="display: block; background: url(../img/indexImages/new.png) no-repeat scroll 0px 0px; height: 11px; width: 23px; position: absolute; left: 94px; top: 0px;"></span></a></li> 
+						<li id="zhenpin" style="float:right; color:#fff; 0 0 no-repeat;display:block;;padding:0;width:255px;height:35px;text-indent:-999em;">恒温恒湿仓储</li> 
+					</ul>
+					<div class="categorys"> 
+						<h3><a href="#" target="_blank" group1="ad" group2="1308" data-dts="IN.1">选酒中心</a><b class="arrow"></b></h3> 
+						<div class="categroup"></div> 
+					</div>
+				</div>
+			</div>			
+		</div>
+		<!-- header end -->
+				
+		<!--begin of 中间内容 -->
+		<div class="bigTu">
+			<!--放大镜-->
+			<div class="magnify">
+				<img id="b_img" class="b_img" src="../img/bigpic1.JPG"/>
+			</div>
+					
+			<!--详情-->
+			<div class="particulars">
+				<p class="dao1">选酒中心 > 红葡萄酒 > 干红 <b>维莎赤霞珠干红葡萄酒</b></p>
+				<div class="par_left">
+					<div id="big_pic" class="big_pic">
+						<img src="../img/bigpic1.JPG"/>
+						<img src="../img/bigpic2.JPG"/>
+						<img src="../img/bigpic3.JPG"/>
+						<img src="../img/bigpic4.JPG"/>
+						<img src="../img/bigpic2.JPG"/>
+						<img src="../img/bigpic1.JPG"/>
+						
+						<p class="zheKou">3.7折</p>
+						<p id="parbtn_left" class="parbtn_left"></p>
+						<p id="parbtn_right" class="parbtn_right"></p>
+						<p class="parbtn_big"></p>
+						<div class="mouse">
+							
+						</div>
+					</div>	
+					<div class="small_pic">
+						<ul id="small_pics" class="small_pics">
+							<li class="small_first"><img src="../img/smallpic1.JPG"/></li>
+							<li class="small_second"><img src="../img/smallpic2.JPG"/></li>
+							<li class="small_third"><img src="../img/smallpic3.JPG"/></li>
+							<li class="small_forth"><img src="../img/smallpic4.JPG"/></li>	
+							<li class="small_fifth"><img src="../img/smallpic3.JPG"/></li>
+							<li class="small_sixth"><img src="../img/smallpic4.JPG"/></li>
+						</ul>
+						<p class="small_btnL"></p>
+						<p class="small_btnR"></p>
+					</div>
+					
+				</div>
+				<div class="par_right">
+					<div class="text_s">
+						<p style="line-height: 35px;"><b>维莎赤霞珠干红葡萄酒</b></p>
+						<p style="color:red;margin-bottom: 10px;">9/8 12:00-9/11 12：00，指定商品，满299送酒具三件套，每个订单限一套;满499可多得拉菲传奇波尔多干红一只，多买多得！</p>
+						<img src="../img/pinlun.png"/>					
+					</div>
+					<div class="more">
+						<span style="color:#999999;display: block;float:left;margin-left:10px">促销信息：</span><span class="zheKou2">商品折扣</span><span style="color:#999999;display: block;float:left;margin-left:10px">72h 大促</span>
+						<a class="gengDuo" href="#">更多优惠</a>
+					</div>
+					<img style="clear: both;" src="../img/chuxiaojia.png"/>	
+					<p class="cuXi1">促销折扣<b>3.7</b>折</p>
+					<p  class="cuXi1 price">节省<b>￥<em>86.0</em></b></p>
+					<!--更多优惠出来的div-->
+					<div class="more_div">
+						<div class="more">
+							<span class="zheKou2">买赠</span><span style="color:#999999;display: block;float:left;margin-left:10px">购买指定商品满499的宝嘉丽干红+礼袋</span>
+							<a class="gengDuo" href="#">更多优惠</a>
+						</div>
+						<div class="more">
+							<span class="zheKou2">商品折扣</span><span style="color:#999999;display: block;float:left;margin-left:10px">中秋特惠促销</span>
+						</div>
+						<div class="more">
+							<span class="zheKou2">商品折扣</span><span style="color:#999999;display: block;float:left;margin-left:10px">明星单品促销特惠</span>
+						</div>
+						<div class="more">
+							<span class="zheKou2">换购</span><span style="color:#999999;display: block;float:left;margin-left:10px">全场特惠</span>
+						</div>
+							<span class="zheKou2">换购</span><span style="color:#999999;display: block;float:left;margin-left:10px">72h 大促</span>
+						
+					</div>
+					
+				
+					<div class="par_place">
+						<p style="line-height: 28px;margin-top:20px;margin-left:15px"><span class="country2">配送城市：</span><a class="peiSon" href="#">北  京</a><b style="color:red;">北京</b>有货  北京分仓发出</p>
+						<p style="clear: both;line-height: 28px;float:left;margin-top:20px;margin-left:15px">选择数量：</p>
+						<p class="counts"><input type="button"  class="countJian" /><input type="text"  value="0"  class="count"/><input type="button"  class="countJia" /></p>
+						<a class="join" style="cursor: pointer;">加入购物车</a>
+						<div id="CountMsg" class="HotDate">
+							    <span class="t_d">00 天</span>
+							    <span class="t_h">00 时</span>
+							    <span class="t_m">00 分</span>
+							    <span class="t_s">00 秒</span>
+						</div>
+					</div>
+					
+				
+				</div>
+				
+					<div class="guanZhu">
+						<a class="guanZ" href="#">加关注</a>
+						<span class="share" href="#">分享到：<span class="gengD"></span><img style="margin-top:3px;float:right" src="../img/weibo.png"/></span>
+					</div>
+			</div>
+			
+			<!--组合购买-->
+			<div class="group_buy">
+				<div class="group_title">
+					&nbsp;组合购买更优惠
+				</div>
+				<div class="group_buyx">
+					<ul>
+						<li><img src="../img/img2.png"/></li>
+						<li><img src="../img/img3.png"/></li>
+						<li><img src="../img/img4.png"/></li>
+						<li><img src="../img/img2.png"/></li>
+						<li><img src="../img/img2.png"/></li>
+						<li><img src="../img/img3.png"/></li>
+						<li><img src="../img/img4.png"/></li>
+						<li><img src="../img/img2.png"/></li>
+						<li><img src="../img/img4.png"/></li>
+						<li><img src="../img/img2.png"/></li>
+					</ul>
+				</div>
+			</div>
+			<!--商品详情-->
+			<div class="shops">
+				<div id="shops_title" class="shops_title">
+					<ul class="shops_ul">
+						<li><a href="#white_title">商品详情</a></li>
+						<li><a href="#white_title">用户评价</a></li>
+						<li><a href="#w2">商品咨询</a></li>
+						<li><a href="#w2">菜酒配</a></li>
+					</ul>
+				</div>
+				<div style="z-index: 4;" class="shops_ulx">
+					<ul class="uls">
+						<li><a href="#">11类型&nbsp;红酒  半干红</a></li>
+						<li><a href="#">级别&nbsp;澳大利亚精选</a></li>
+						<li><a href="#">色泽&nbsp;宝石红</a></li>
+						<li><a href="#">使用场合&nbsp;聚会用</a></li>
+					</ul>
+					<ul class="uls">
+						<li><a href="#">类型&nbsp;红酒  半干红</a></li>
+						<li><a href="#">级别&nbsp;澳大利亚精选</a></li>
+						<li><a href="#">色泽&nbsp;宝石红</a></li>
+						<li><a href="#">使用场合&nbsp;聚会用</a></li>
+					</ul>
+					<ul class="uls">
+						<li><a href="#">类型&nbsp;红酒  半干红</a></li>
+						<li><a href="#">级别&nbsp;澳大利亚精选</a></li>
+						<li><a href="#">色泽&nbsp;宝石红</a></li>
+						<li><a href="#">使用场合&nbsp;聚会用</a></li>
+					</ul>
+					<ul style="border-right: 0;" class="uls">
+						<li><a href="#">类型&nbsp;红酒  半干红</a></li>
+						<li><a href="#">级别&nbsp;澳大利亚精选</a></li>
+						<li><a href="#">色泽&nbsp;宝石红</a></li>
+						<li><a href="#">使用场合&nbsp;聚会用</a></li>
+					</ul>
+				</div>	
+				<div class="shops_ulx">
+					<ul class="uls">
+						<li><a href="#">22类型&nbsp;红酒  半干红</a></li>
+						<li><a href="#">级别&nbsp;澳大利亚精选</a></li>
+						<li><a href="#">色泽&nbsp;宝石红</a></li>
+						<li><a href="#">使用场合&nbsp;聚会用</a></li>
+					</ul>
+					
+					<ul class="uls">
+						<li><a href="#">类型&nbsp;红酒  半干红</a></li>
+						<li><a href="#">级别&nbsp;澳大利亚精选</a></li>
+						<li><a href="#">色泽&nbsp;宝石红</a></li>
+						<li><a href="#">使用场合&nbsp;聚会用</a></li>
+					</ul>
+					<ul style="border-right: 0;" class="uls">
+						<li><a href="#">类型&nbsp;红酒  半干红</a></li>
+						<li><a href="#">级别&nbsp;澳大利亚精选</a></li>
+						<li><a href="#">色泽&nbsp;宝石红</a></li>
+						<li><a href="#">使用场合&nbsp;聚会用</a></li>
+					</ul>
+				</div>	
+				<div class="shops_ulx">
+					<ul class="uls">
+						<li><a href="#">33类型&nbsp;红酒  半干红</a></li>
+						<li><a href="#">级别&nbsp;澳大利亚精选</a></li>
+						<li><a href="#">色泽&nbsp;宝石红</a></li>
+						<li><a href="#">使用场合&nbsp;聚会用</a></li>
+					</ul>
+					<ul class="uls">
+						<li><a href="#">类型&nbsp;红酒  半干红</a></li>
+						<li><a href="#">级别&nbsp;澳大利亚精选</a></li>
+						<li><a href="#">色泽&nbsp;宝石红</a></li>
+						<li><a href="#">使用场合&nbsp;聚会用</a></li>
+					</ul>
+					<ul class="uls">
+						<li><a href="#">类型&nbsp;红酒  半干红</a></li>
+						<li><a href="#">级别&nbsp;澳大利亚精选</a></li>
+						<li><a href="#">色泽&nbsp;宝石红</a></li>
+						<li><a href="#">使用场合&nbsp;聚会用</a></li>
+					</ul>
+					<ul style="border-right: 0;" class="uls">
+						<li><a href="#">类型&nbsp;红酒  半干红</a></li>
+						<li><a href="#">级别&nbsp;澳大利亚精选</a></li>
+						<li><a href="#">色泽&nbsp;宝石红</a></li>
+						<li><a href="#">使用场合&nbsp;聚会用</a></li>
+					</ul>
+				</div>	
+				<div class="shops_ulx">
+					<ul class="uls">
+						<li><a href="#">44类型&nbsp;红酒  半干红</a></li>
+						<li><a href="#">级别&nbsp;澳大利亚精选</a></li>
+						<li><a href="#">色泽&nbsp;宝石红</a></li>
+						<li><a href="#">使用场合&nbsp;聚会用</a></li>
+					</ul>
+					
+					<ul class="uls">
+						<li><a href="#">类型&nbsp;红酒  半干红</a></li>
+						<li><a href="#">级别&nbsp;澳大利亚精选</a></li>
+						<li><a href="#">色泽&nbsp;宝石红</a></li>
+						<li><a href="#">使用场合&nbsp;聚会用</a></li>
+					</ul>
+					<ul style="border-right: 0;" class="uls">
+						<li><a href="#">类型&nbsp;红酒  半干红</a></li>
+						<li><a href="#">级别&nbsp;澳大利亚精选</a></li>
+						<li><a href="#">色泽&nbsp;宝石红</a></li>
+						<li><a href="#">使用场合&nbsp;聚会用</a></li>
+					</ul>
+				</div>	
+	
+			</div>
+			<!--</div>-->
+			<img style="margin-left:240px" src="../img/img1.png"/>
+			<div class="white1">
+				<p class="youQing"><span class="youQ">友情提示</span></p>
+				<p class="white_text1">由于年份不同，酒款信息，例如：酒精度、橡木桶陈酿时间，可能会有差异</p>
+				<p class="ad"><span class="ads">[yellow tail]就是这样非常有趣，非常易饮的酒品，是可以每天饮用的酒品。</span></p>
+				<img src="../img/yellow.png"/>
+				<p class="youQing"><span class="youQ">黄袋鼠历史</span></p>
+				
+				<img src="../img/yellow3.png"/>
+				<img src="../img/yellow4.png"/>
+				<p class="youQing"><span class="youQ">黄尾袋鼠</span></p>
+				<img src="../img/yellow2.png"/>
+				<img src="../img/yellow5.png"/>
+				<p class="youQing"><span class="youQ">物流仓储</span></p>
+				<img src="../img/wuliu.png"/>
+			</div>
+			
+			<div class="white2">
+				<p id="white_title" class="white_title">&nbsp;用户评价<a href="#">商品评价返现规则</a></p>
+				<div class="goodP">
+					<div class="goodT">
+						<p>98<em>%</em></p>
+						<span>好评度</span>
+					</div>
+					<p class="start"></p>				
+				</div>
+				<div class="jinDu">
+					<p> &nbsp;已售出2945024瓶 <em></em>&nbsp;&nbsp;&nbsp;已有384位评论</p><br />
+					很好<p class="jinDu1"></p><br />
+					一般<p class="jinDu2"></p><br />
+					非常棒<p class="jinDu3"></p>
+				</div>
+				<a class="pingLun" href="#">我要评论</a>
+				
+				
+				<div class="jindu_nav">
+					<div class="jind_nav">
+						<a href="">全部</a>
+						<a href="">很好(527)</a>
+						<a href="">较好(116)</a>
+						<a href="">一般(9)</a>
+						<a href="">有图片的评论(2)</a>
+					</div>
+					<div class="nav_x">
+						<a class="aa" href="#">最近酒评</a>
+					</div>
+				</div>
+				<!--总评价，tab切换-->
+				<div style="z-index: 4;" class="pingJ">
+					<div class="pingLun1">
+						<img style="float:left" src="../img/renyuan2.png"/>
+						<div class="pingRight">
+							<div class="right_top">
+								<p class="rr1"></p> <a href="#">购买过</a><a style="color:dodgerblue" href="#">黄尾袋鼠西拉葡萄酒</a><p style="float: right;">2015-09-23 10:32:23</p>
+							</div>
+							<div class="right_bottom">
+								<div class="content">
+									<br />
+									&nbsp;&nbsp;这是我买过的最好的酒 <br />
+									( 此评论来自“也买酒App”)
+								</div>
+								<p class="huiFu">
+									此评价对我&nbsp;<em>有用</em>(0) <em>没用</em> (0) <a class="a2" href="#">共0条回复</a><a class="a1" href="#">回复</a>
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="pingLun1">
+						<img style="float:left" src="../img/huiyuan4.png"/>
+						<div class="pingRight">
+							<div class="right_top">
+								<p class="rr1"></p> <a href="#">购买过</a><a style="color:dodgerblue" href="#">黄尾袋鼠西拉葡萄酒</a><p style="float: right;">2015-09-23 10:32:23</p>
+							</div>
+							<div class="right_bottom">
+								<div class="content">
+									<br />
+									&nbsp;&nbsp;好酒 <br />
+									( 此评论来自“也买酒App”)
+								</div>
+								<p class="huiFu">
+									此评价对我&nbsp;<em>有用</em>(0) <em>没用</em> (0) <a class="a2" href="#">共0条回复</a><a class="a1" href="#">回复</a>
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="pingLun1">
+						<img style="float:left" src="../img/renyuan.png"/>
+						<div class="pingRight">
+							<div class="right_top">
+								<p class="rr1"></p> <a href="#">购买过</a><a style="color:dodgerblue" href="#">黄尾袋鼠西拉葡萄酒</a><p style="float: right;">2015-09-23 10:32:23</p>
+							</div>
+							<div class="right_bottom">
+								<div class="content">
+									<br />
+									&nbsp;&nbsp;挺纯的酒 <br />
+									( 此评论来自“也买酒App”)
+								</div>
+								<p class="huiFu">
+									此评价对我&nbsp;<em>有用</em>(0) <em>没用</em> (0) <a class="a2" href="#">共0条回复</a><a class="a1" href="#">回复</a>
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="pingLun1">
+						<img style="float:left" src="../img/huiyuan4.png"/>
+						<div class="pingRight">
+							<div class="right_top">
+								<p class="rr1"></p> <a href="#">购买过</a><a style="color:dodgerblue" href="#">黄尾袋鼠西拉葡萄酒</a><p style="float: right;">2015-09-23 10:32:23</p>
+							</div>
+							<div class="right_bottom">
+								<div class="content">
+									<br />
+									&nbsp;&nbsp;不错，挺好的 <br />
+									( 此评论来自“也买酒App”)
+								</div>
+								<p class="huiFu">
+									此评价对我&nbsp;<em>有用</em>(0) <em>没用</em> (0) <a class="a2" href="#">共0条回复</a><a class="a1" href="#">回复</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="pingJ">
+					<div class="pingLun1">
+						<img style="float:left" src="../img/renyuan2.png"/>
+						<div class="pingRight">
+							<div class="right_top">
+								<p class="rr1"></p> <a href="#">购买过</a><a style="color:dodgerblue" href="#">黄尾袋鼠西拉葡萄酒</a><p style="float: right;">2015-09-23 10:32:23</p>
+							</div>
+							<div class="right_bottom">
+								<div class="content">
+									<br />
+									&nbsp;&nbsp;22这是我买过的最好的酒 <br />
+									( 此评论来自“也买酒App”)
+								</div>
+								<p class="huiFu">
+									此评价对我&nbsp;<em>有用</em>(0) <em>没用</em> (0) <a class="a2" href="#">共0条回复</a><a class="a1" href="#">回复</a>
+								</p>
+							</div>
+						</div>
+					</div>
+					
+					<div class="pingLun1">
+						<img style="float:left" src="../img/renyuan.png"/>
+						<div class="pingRight">
+							<div class="right_top">
+								<p class="rr1"></p> <a href="#">购买过</a><a style="color:dodgerblue" href="#">黄尾袋鼠西拉葡萄酒</a><p style="float: right;">2015-09-23 10:32:23</p>
+							</div>
+							<div class="right_bottom">
+								<div class="content">
+									<br />
+									&nbsp;&nbsp;挺纯的酒 <br />
+									( 此评论来自“也买酒App”)
+								</div>
+								<p class="huiFu">
+									此评价对我&nbsp;<em>有用</em>(0) <em>没用</em> (0) <a class="a2" href="#">共0条回复</a><a class="a1" href="#">回复</a>
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="pingLun1">
+						<img style="float:left" src="../img/huiyuan4.png"/>
+						<div class="pingRight">
+							<div class="right_top">
+								<p class="rr1"></p> <a href="#">购买过</a><a style="color:dodgerblue" href="#">黄尾袋鼠西拉葡萄酒</a><p style="float: right;">2015-09-23 10:32:23</p>
+							</div>
+							<div class="right_bottom">
+								<div class="content">
+									<br />
+									&nbsp;&nbsp;不错，挺好的 <br />
+									( 此评论来自“也买酒App”)
+								</div>
+								<p class="huiFu">
+									此评价对我&nbsp;<em>有用</em>(0) <em>没用</em> (0) <a class="a2" href="#">共0条回复</a><a class="a1" href="#">回复</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="pingJ">
+					<div class="pingLun1">
+						<img style="float:left" src="../img/renyuan2.png"/>
+						<div class="pingRight">
+							<div class="right_top">
+								<p class="rr1"></p> <a href="#">购买过</a><a style="color:dodgerblue" href="#">黄尾袋鼠西拉葡萄酒</a><p style="float: right;">2015-09-23 10:32:23</p>
+							</div>
+							<div class="right_bottom">
+								<div class="content">
+									<br />
+									&nbsp;&nbsp;33这是我买过的最好的酒 <br />
+									( 此评论来自“也买酒App”)
+								</div>
+								<p class="huiFu">
+									此评价对我&nbsp;<em>有用</em>(0) <em>没用</em> (0) <a class="a2" href="#">共0条回复</a><a class="a1" href="#">回复</a>
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="pingLun1">
+						<img style="float:left" src="../img/huiyuan4.png"/>
+						<div class="pingRight">
+							<div class="right_top">
+								<p class="rr1"></p> <a href="#">购买过</a><a style="color:dodgerblue" href="#">黄尾袋鼠西拉葡萄酒</a><p style="float: right;">2015-09-23 10:32:23</p>
+							</div>
+							<div class="right_bottom">
+								<div class="content">
+									<br />
+									&nbsp;&nbsp;好酒 <br />
+									( 此评论来自“也买酒App”)
+								</div>
+								<p class="huiFu">
+									此评价对我&nbsp;<em>有用</em>(0) <em>没用</em> (0) <a class="a2" href="#">共0条回复</a><a class="a1" href="#">回复</a>
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="pingLun1">
+						<img style="float:left" src="../img/renyuan.png"/>
+						<div class="pingRight">
+							<div class="right_top">
+								<p class="rr1"></p> <a href="#">购买过</a><a style="color:dodgerblue" href="#">黄尾袋鼠西拉葡萄酒</a><p style="float: right;">2015-09-23 10:32:23</p>
+							</div>
+							<div class="right_bottom">
+								<div class="content">
+									<br />
+									&nbsp;&nbsp;挺纯的酒 <br />
+									( 此评论来自“也买酒App”)
+								</div>
+								<p class="huiFu">
+									此评价对我&nbsp;<em>有用</em>(0) <em>没用</em> (0) <a class="a2" href="#">共0条回复</a><a class="a1" href="#">回复</a>
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="pingLun1">
+						<img style="float:left" src="../img/huiyuan4.png"/>
+						<div class="pingRight">
+							<div class="right_top">
+								<p class="rr1"></p> <a href="#">购买过</a><a style="color:dodgerblue" href="#">黄尾袋鼠西拉葡萄酒</a><p style="float: right;">2015-09-23 10:32:23</p>
+							</div>
+							<div class="right_bottom">
+								<div class="content">
+									<br />
+									&nbsp;&nbsp;不错，挺好的 <br />
+									( 此评论来自“也买酒App”)
+								</div>
+								<p class="huiFu">
+									此评价对我&nbsp;<em>有用</em>(0) <em>没用</em> (0) <a class="a2" href="#">共0条回复</a><a class="a1" href="#">回复</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="pingJ">
+					<div class="pingLun1">
+						<img style="float:left" src="../img/renyuan2.png"/>
+						<div class="pingRight">
+							<div class="right_top">
+								<p class="rr1"></p> <a href="#">购买过</a><a style="color:dodgerblue" href="#">黄尾袋鼠西拉葡萄酒</a><p style="float: right;">2015-09-23 10:32:23</p>
+							</div>
+							<div class="right_bottom">
+								<div class="content">
+									<br />
+									&nbsp;&nbsp;44这是我买过的最好的酒 <br />
+									( 此评论来自“也买酒App”)
+								</div>
+								<p class="huiFu">
+									此评价对我&nbsp;<em>有用</em>(0) <em>没用</em> (0) <a class="a2" href="#">共0条回复</a><a class="a1" href="#">回复</a>
+								</p>
+							</div>
+						</div>
+					</div>
+					
+					<div class="pingLun1">
+						<img style="float:left" src="../img/renyuan.png"/>
+						<div class="pingRight">
+							<div class="right_top">
+								<p class="rr1"></p> <a href="#">购买过</a><a style="color:dodgerblue" href="#">黄尾袋鼠西拉葡萄酒</a><p style="float: right;">2015-09-23 10:32:23</p>
+							</div>
+							<div class="right_bottom">
+								<div class="content">
+									<br />
+									&nbsp;&nbsp;挺纯的酒 <br />
+									( 此评论来自“也买酒App”)
+								</div>
+								<p class="huiFu">
+									此评价对我&nbsp;<em>有用</em>(0) <em>没用</em> (0) <a class="a2" href="#">共0条回复</a><a class="a1" href="#">回复</a>
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="pingLun1">
+						<img style="float:left" src="../img/huiyuan4.png"/>
+						<div class="pingRight">
+							<div class="right_top">
+								<p class="rr1"></p> <a href="#">购买过</a><a style="color:dodgerblue" href="#">黄尾袋鼠西拉葡萄酒</a><p style="float: right;">2015-09-23 10:32:23</p>
+							</div>
+							<div class="right_bottom">
+								<div class="content">
+									<br />
+									&nbsp;&nbsp;不错，挺好的 <br />
+									( 此评论来自“也买酒App”)
+								</div>
+								<p class="huiFu">
+									此评价对我&nbsp;<em>有用</em>(0) <em>没用</em> (0) <a class="a2" href="#">共0条回复</a><a class="a1" href="#">回复</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="white2 white3">
+				<p id="w2" class="white_title">&nbsp;商品咨询</p>
+				<div class="jindu_nav">
+					<div class="jind_nav jindd">
+						<a href="">全部咨询</a>
+						<a href="">商品咨询</a>
+						<a href="">库存配送</a>
+						<a href="">支付问题</a>
+						<a href="">发票保障</a>
+						<a href="">促销赠品</a>
+						<a href="">其他评论</a>
+					</div>
+				</div>
+				<!--总评价2，tab切换-->
+				<div style="display: block;"  class="pingJJ" >
+					<div  class="pingLun1">
+						<img style="float:left" src="../img/huiyuan5.png"/>
+						<div class="pingRight">							
+							<div class="right_bottom">
+								<div class="content">
+									<p style="line-height: 30px;">11<em class="cons"></em><em class="cons2"> 咨询内容</em><span >&nbsp;&nbsp;&nbsp;&nbsp;请问这酒的质量出问题了怎么办，有没有客服</span></p>
+									<p style="line-height: 30px;"><em class="conss"></em><em class="cons2">也买回复</em><span style="color:orange">&nbsp;&nbsp;&nbsp;&nbsp;您好，请您把具体的问题反馈一下，感谢您的购买</span></p>	
+								</div>
+								<p class="huiFu">
+									对我们的回复&nbsp;<em>满意</em>(0) <em>不满意</em> (1)
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="pingLun1">
+						<img style="float:left" src="../img/huiyuan5.png"/>
+						<div class="pingRight">
+							<div class="right_bottom">
+								<div class="content">
+									<p style="line-height: 30px;">11<em class="cons"></em><em class="cons2"> 咨询内容</em><span >&nbsp;&nbsp;&nbsp;&nbsp;请问这酒的质量出问题了怎么办，有没有客服</span></p>
+									<p style="line-height: 30px;"><em class="conss"></em><em class="cons2">也买回复</em><span style="color:orange">&nbsp;&nbsp;&nbsp;&nbsp;您好，请您把具体的问题反馈一下，感谢您的购买</span></p>	
+								</div>
+								<p class="huiFu">
+									对我们的回复&nbsp;<em>满意</em>(0) <em>不满意</em> (1)
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="pingLun1">
+						<img style="float:left" src="../img/huiyuan5.png"/>
+						<div class="pingRight">
+							
+							<div class="right_bottom">
+								<div class="content">
+									<p style="line-height: 30px;"><em class="cons"></em><em class="cons2"> 咨询内容</em><span >&nbsp;&nbsp;&nbsp;&nbsp;请问这酒的质量出问题了怎么办，有没有客服</span></p>
+									<p style="line-height: 30px;"><em class="conss"></em><em class="cons2">也买回复</em><span style="color:orange">&nbsp;&nbsp;&nbsp;&nbsp;您好，请您把具体的问题反馈一下，感谢您的购买</span></p>	
+								</div>
+								<p class="huiFu">
+									对我们的回复&nbsp;<em>满意</em>(0) <em>不满意</em> (1)
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="pingLun1">
+						<img style="float:left" src="../img/huiyuan5.png"/>
+						<div class="pingRight">
+							
+							<div class="right_bottom">
+								<div class="content">
+									<p style="line-height: 30px;"><em class="cons"></em><em class="cons2"> 咨询内容</em><span >&nbsp;&nbsp;&nbsp;&nbsp;请问这酒的质量出问题了怎么办，有没有客服</span></p>
+									<p style="line-height: 30px;"><em class="conss"></em><em class="cons2">也买回复</em><span style="color:orange">&nbsp;&nbsp;&nbsp;&nbsp;您好，请您把具体的问题反馈一下，感谢您的购买</span></p>	
+								</div>
+								<p class="huiFu">
+									对我们的回复&nbsp;<em>满意</em>(0) <em>不满意</em> (1)
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div style="display: block;"  class="pingJJ" >
+					<div class="pingLun1">
+						<img style="float:left" src="../img/huiyuan5.png"/>
+						<div class="pingRight">							
+							<div class="right_bottom">
+								<div class="content">
+									<p style="line-height: 30px;">22<em class="cons"></em><em class="cons2"> 咨询内容</em><span >&nbsp;&nbsp;&nbsp;&nbsp;请问这酒的质量出问题了怎么办，有没有客服</span></p>
+									<p style="line-height: 30px;"><em class="conss"></em><em class="cons2">也买回复</em><span style="color:orange">&nbsp;&nbsp;&nbsp;&nbsp;您好，请您把具体的问题反馈一下，感谢您的购买</span></p>	
+								</div>
+								<p class="huiFu">
+									对我们的回复&nbsp;<em>满意</em>(0) <em>不满意</em> (1)
+								</p>
+							</div>
+						</div>
+					</div>
+					
+					<div class="pingLun1">
+						<img style="float:left" src="../img/huiyuan5.png"/>
+						<div class="pingRight">
+							
+							<div class="right_bottom">
+								<div class="content">
+									<p style="line-height: 30px;">33<em class="cons"></em><em class="cons2"> 咨询内容</em><span >&nbsp;&nbsp;&nbsp;&nbsp;请问这酒的质量出问题了怎么办，有没有客服</span></p>
+									<p style="line-height: 30px;"><em class="conss"></em><em class="cons2">也买回复</em><span style="color:orange">&nbsp;&nbsp;&nbsp;&nbsp;您好，请您把具体的问题反馈一下，感谢您的购买</span></p>	
+								</div>
+								<p class="huiFu">
+									对我们的回复&nbsp;<em>满意</em>(0) <em>不满意</em> (1)
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="pingLun1">
+						<img style="float:left" src="../img/huiyuan5.png"/>
+						<div class="pingRight">
+							<div class="right_bottom">
+								<div class="content">
+									<p style="line-height: 30px;">44<em class="cons"></em><em class="cons2"> 咨询内容</em><span >&nbsp;&nbsp;&nbsp;&nbsp;请问这酒的质量出问题了怎么办，有没有客服</span></p>
+									<p style="line-height: 30px;"><em class="conss"></em><em class="cons2">也买回复</em><span style="color:orange">&nbsp;&nbsp;&nbsp;&nbsp;您好，请您把具体的问题反馈一下，感谢您的购买</span></p>	
+								</div>
+								<p class="huiFu">
+									对我们的回复&nbsp;<em>满意</em>(0) <em>不满意</em> (1)
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div style="display: block;"  class="pingJJ" >
+					<div class="pingLun1">
+						<img style="float:left" src="../img/huiyuan5.png"/>
+						<div class="pingRight">							
+							<div class="right_bottom">
+								<div class="content">
+									<p style="line-height: 30px;">33<em class="cons"></em><em class="cons2"> 咨询内容</em><span >&nbsp;&nbsp;&nbsp;&nbsp;请问这酒的质量出问题了怎么办，有没有客服</span></p>
+									<p style="line-height: 30px;"><em class="conss"></em><em class="cons2">也买回复</em><span style="color:orange">&nbsp;&nbsp;&nbsp;&nbsp;您好，请您把具体的问题反馈一下，感谢您的购买</span></p>	
+								</div>
+								<p class="huiFu">
+									对我们的回复&nbsp;<em>满意</em>(0) <em>不满意</em> (1)
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="pingLun1">
+						<img style="float:left" src="../img/huiyuan5.png"/>
+						<div class="pingRight">
+							<div class="right_bottom">
+								<div class="content">
+									<p style="line-height: 30px;"><em class="cons"></em><em class="cons2"> 咨询内容</em><span >&nbsp;&nbsp;&nbsp;&nbsp;请问这酒的质量出问题了怎么办，有没有客服</span></p>
+									<p style="line-height: 30px;"><em class="conss"></em><em class="cons2">也买回复</em><span style="color:orange">&nbsp;&nbsp;&nbsp;&nbsp;您好，请您把具体的问题反馈一下，感谢您的购买</span></p>	
+								</div>
+								<p class="huiFu">
+									对我们的回复&nbsp;<em>满意</em>(0) <em>不满意</em> (1)
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="pingLun1">
+						<img style="float:left" src="../img/huiyuan5.png"/>
+						<div class="pingRight">
+							
+							<div class="right_bottom">
+								<div class="content">
+									<p style="line-height: 30px;">33<em class="cons"></em><em class="cons2"> 咨询内容</em><span >&nbsp;&nbsp;&nbsp;&nbsp;请问这酒的质量出问题了怎么办，有没有客服</span></p>
+									<p style="line-height: 30px;"><em class="conss"></em><em class="cons2">也买回复</em><span style="color:orange">&nbsp;&nbsp;&nbsp;&nbsp;您好，请您把具体的问题反馈一下，感谢您的购买</span></p>	
+								</div>
+								<p class="huiFu">
+									对我们的回复&nbsp;<em>满意</em>(0) <em>不满意</em> (1)
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="pingLun1">
+						<img style="float:left" src="../img/huiyuan5.png"/>
+						<div class="pingRight">
+							<div class="right_bottom">
+								<div class="content">
+									<p style="line-height: 30px;">44<em class="cons"></em><em class="cons2"> 咨询内容</em><span >&nbsp;&nbsp;&nbsp;&nbsp;请问这酒的质量出问题了怎么办，有没有客服</span></p>
+									<p style="line-height: 30px;"><em class="conss"></em><em class="cons2">也买回复</em><span style="color:orange">&nbsp;&nbsp;&nbsp;&nbsp;您好，请您把具体的问题反馈一下，感谢您的购买</span></p>	
+								</div>
+								<p class="huiFu">
+									对我们的回复&nbsp;<em>满意</em>(0) <em>不满意</em> (1)
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div style="display: block;"  class="pingJJ">
+					<div class="pingLun1">
+						<img style="float:left" src="../img/huiyuan5.png"/>
+						<div class="pingRight">							
+							<div class="right_bottom">
+								<div class="content">
+									<p style="line-height: 30px;">44<em class="cons"></em><em class="cons2"> 咨询内容</em><span >&nbsp;&nbsp;&nbsp;&nbsp;请问这酒的质量出问题了怎么办，有没有客服</span></p>
+									<p style="line-height: 30px;"><em class="conss"></em><em class="cons2">也买回复</em><span style="color:orange">&nbsp;&nbsp;&nbsp;&nbsp;您好，请您把具体的问题反馈一下，感谢您的购买</span></p>	
+								</div>
+								<p class="huiFu">
+									对我们的回复&nbsp;<em>满意</em>(0) <em>不满意</em> (1)
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="pingLun1">
+						<img style="float:left" src="../img/huiyuan5.png"/>
+						<div class="pingRight">
+							<div class="right_bottom">
+								<div class="content">
+									<p style="line-height: 30px;"><em class="cons"></em><em class="cons2"> 咨询内容</em><span >&nbsp;&nbsp;&nbsp;&nbsp;请问这酒的质量出问题了怎么办，有没有客服</span></p>
+									<p style="line-height: 30px;"><em class="conss"></em><em class="cons2">也买回复</em><span style="color:orange">&nbsp;&nbsp;&nbsp;&nbsp;您好，请您把具体的问题反馈一下，感谢您的购买</span></p>	
+								</div>
+								<p class="huiFu">
+									对我们的回复&nbsp;<em>满意</em>(0) <em>不满意</em> (1)
+								</p>
+							</div>
+						</div>
+					</div>
+					
+					<div class="pingLun1">
+						<img style="float:left" src="../img/huiyuan5.png"/>
+						<div class="pingRight">
+							<div class="right_bottom">
+								<div class="content">
+									<p style="line-height: 30px;">44<em class="cons"></em><em class="cons2"> 咨询内容</em><span >&nbsp;&nbsp;&nbsp;&nbsp;请问这酒的质量出问题了怎么办，有没有客服</span></p>
+									<p style="line-height: 30px;"><em class="conss"></em><em class="cons2">也买回复</em><span style="color:orange">&nbsp;&nbsp;&nbsp;&nbsp;您好，请您把具体的问题反馈一下，感谢您的购买</span></p>	
+								</div>
+								<p class="huiFu">
+									对我们的回复&nbsp;<em>满意</em>(0) <em>不满意</em> (1)
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>	
+			</div>
+			
+		
+			<div class="daPei">
+				<p style="float:left">&nbsp;&nbsp;在此菜单中共有<em style="font-style: normal;color:cornflowerblue"> 0 </em>款菜肴搭配</p>
+				<a class="pingLun2" href="#">我要搭配</a>
+			</div>
+		</div>
+		<!-- end 中间内容 -->
+		
+		<!-- begin of 页尾(全，供程序页使用) -->
+		<div id="footer" class="footer">
+			<div class="foot-main"> 
+			 	<div class="foot-col clearfix"> 
+			  		<div class="foot-col1"> 
+				   		<h2>也买酒承诺</h2> 
+				   		<a class="zp" href="#" target="_blank" rel="nofollow" group1="ad" group2="1303"> <h3>正品保障</h3> </a> 
+			  		 	<a class="th" href="#" target="_blank" rel="nofollow" group1="ad" group2="1303"> <h3>30天退货</h3> <span>30天无理由退换货</span> </a> 
+				   		<a class="hw" href="#" target="_blank" rel="nofollow" group1="ad" group2="1303"> <h3>恒温恒湿</h3> <span>六大仓恒温恒湿</span> </a> 
+				  	 	<a class="free" href="#" target="_blank" rel="nofollow" group1="ad" group2="1303"> <h3>免运费</h3> <span>满150元 免运费</span> </a> 
+				  	 	<a class="mf" href="#" target="_blank" rel="nofollow" group1="ad" group2="1303"> <h3>慢就返</h3> <span>3大城市没有按时送达，也买酒就返</span> </a> 
+			  		</div> 
+				  	<div class="foot-col2"> 
+					   	<h2>也买酒服务</h2> 
+					   	<ul class="foot-ul"> 
+					   	 	<li> <h3>购物指南</h3> <p> <a href="#" target="_blank" rel="nofollow" group1="ad" group2="1303">帐户注册</a> <a href="#" target="_blank" rel="nofollow" group1="ad" group2="1303">购物流程</a> <a href="#" target="_blank" rel="nofollow" group1="ad" group2="1303">积分制度</a> <a href="#" target="_blank" rel="nofollow" group1="ad" group2="1303">礼品卡</a> <a href="#" target="_blank" rel="nofollow" group1="ad" group2="1303">会员权益</a> <a href="#" target="_blank" rel="nofollow" group1="ad" group2="1303">常见问题</a> </p> </li> 
+					   		<li> <h3>支付帮助</h3> <p> <a href="#" target="_blank" rel="nofollow" group1="ad" group2="1303">货到付款</a> <a href="#" target="_blank" rel="nofollow" group1="ad" group2="1303">在线支付</a> <a href="#" target="_blank" rel="nofollow" group1="ad" group2="1303">银行转帐</a> <a href="#" target="_blank" rel="nofollow" group1="ad" group2="1303">发票制度</a> </p> </li> 
+					  		<li> <h3>专业特色</h3> <p> <a href="#" target="_blank" rel="nofollow" group1="ad" group2="1303">存酒库</a> <a href="#" target="_blank" rel="nofollow" group1="ad" group2="1303">酒类交易中心</a> <a href="#" target="_blank" rel="nofollow" group1="ad" group2="1303">全国门店分布</a> <a href="#" target="_blank" rel="nofollow" group1="ad" group2="1303">香港免税</a> <a href="#" target="_blank" rel="nofollow" group1="ad" group2="1303">期酒交易</a> </p> </li> 
+					  	 	<li> <h3>物流配送</h3> <p> <a href="#" target="_blank" rel="nofollow" group1="ad" group2="1303">150元免运费</a> <a href="#" target="_blank" rel="nofollow" group1="ad" group2="1303">配送范围</a> <a href="#" target="_blank" rel="nofollow" group1="ad" group2="1303">慢就返</a> </p> </li> 
+					 	   	<li> <h3>关于我们</h3> <p> <a href="#" target="_blank" rel="nofollow" group1="ad" group2="1303">关于也买酒</a> <a href="#" target="_blank" rel="nofollow" group1="ad" group2="1303">联系我们</a> <a href="#" target="_blank" rel="nofollow" group1="ad" group2="1303">诚招英才</a> <a href="#" target="_blank" rel="nofollow" group1="ad" group2="1303">媒体聚焦</a> <a href="#" target="_blank" rel="nofollow" group1="ad" group2="1303">隐私声明</a> <span style="color:#666">4008208060</span> </p> </li> 
+					 	   	<li> <h3>招商合作</h3> <p> <a href="#" target="_blank" rel="nofollow" group1="ad" group2="1303">经销商招募</a> <a href="#" target="_blank" rel="nofollow" group1="ad" group2="1303">连锁店招募</a> <a href="#" target="_blank" rel="nofollow" group1="ad" group2="1303">也买联盟</a> <a href="#" target="_blank" rel="nofollow" group1="ad" group2="1303">企业采购</a> </p> </li> 
+					   	</ul> 
+				  	</div> 
+				  	<div class="foot-col3"> 
+					    <h2>关注也买酒</h2> 
+					    <div class="mobile clearfix"> 
+					    	<h3>也买酒APP</h3> 
+					    	<a class="app" href="#" target="_blank" rel="nofollow" group1="ad" group2="1303">app store</a> 
+					   		<a class="android" href="#" target="_blank" rel="nofollow" group1="ad" group2="1303">android</a> 
+					    </div> 
+					    <dl class="code clearfix"> 
+					    	<dt>也买二维码</dt> 
+						    <dd> 
+						        <h3>也买酒官方微信</h3> 
+						        <p>微信扫描二维码，随时随地与小也亲密接触，精彩活动，劲爆优惠触手可得！</p> 
+						    </dd> 
+					    </dl> 
+				        <ul class="sns clearfix"> 
+				    		<li> <a class="sina" href="#" target="_blank" rel="nofollow" group1="ad" group2="1303">新浪微博</a> 
+				     			<div class="sns-right"> 
+				      				<p>新浪微博</p> 
+				     				<a class="add-btn" href="#" target="_blank" rel="nofollow" group1="ad" group2="1303">立即关注</a> 
+				    			</div> 
+				    		</li> 
+			  			</ul> 
+					</div> 
+				</div> 
+			</div>
+			<div class="foot-nav"> 
+				<a href="#" target="_blank" rel="nofollow" group1="ad">关于也买酒</a> 
+				<span class="sep">|</span> 
+				<a href="#" target="_blank" rel="nofollow" group1="ad">联系我们</a> 
+				<span class="sep">|</span> 
+				<a href="#" target="_blank" rel="nofollow" group1="ad">媒体聚焦</a> 
+				<span class="sep">|</span> 
+				<a href="#" target="_blank" rel="nofollow" group1="ad">诚招英才</a> 
+				<span class="sep">|</span> 
+				<a href="#" target="_blank" rel="nofollow" group1="ad">隐私声明</a> 
+			</div>
+			<div class="foot-license"> 
+				<span class="top100">消费者最喜爱的网站TOP100</span> 
+				<span class="sep">|</span> 
+				<span class="year18">仅限18周岁以上人士购买</span> 
+				<span class="sep">|</span> 
+				<a target="_blank" href="#" style="color:#999999;" rel="nofollow" group1="ad"><span class="shzxw">网络社会征信网</span></a> 
+				<span class="sep">|</span> 
+				<span class="shgs">上海工商</span> 
+				<span class="sep">|</span> 
+				<span>京公网安备11010502013828</span> 
+			</div> 
+			<div class="foot-copyright e-imageload">
+				Copyright 2006-2015 也买酒 yesmywine.com 版权所有 
+				<span class="sep">|</span> 
+				<a href="#" target="_blank" style="color:#999" rel="nofollow" group1="ad">沪ICP备15036938号-1</a> 
+				<br> 
+				<div class="cx">
+					<span class="float"> <a id="___szfw_logo___" href="#" target="_blank" rel="nofollow" group1="ad"> <img src="../img/indexImages/chengxin.png" width="112" height="40" align="absmiddle" original="http://img11.yesmyimg.com/newWeb/images/chengxin.png"></a></span> 
+					<span class="float" style="margin-left:10px;display:inline"><a href="#" target="_block" group1="ad"><img src="../img/indexImages/jiujiao.jpg" style="opacity: 1;" height="40" width="112" alt="沪公网备" original="http://img14.yesmyimg.com/images/event/2015/12/jiujiao.jpg"></a></span> 
+				</div> 
+			</div>
+		</div>
+		<!-- end -->
+		
+		<!-- nBar 侧栏 -->
+		<div class="ym-nBar" style="right: 0px;">
+			<div class="ym-nBar-tabs">
+				<div class="ym-nBar-tab ym-nBar-tab-user" style="top: 170.1px;">
+					<div class="ym-nBar-user-default"></div>
+					<div class="ym-nBar-user-header" style="display: none;">
+						<img src="#" alt="" class="responsive">
+					</div>
+					<!-- 登录成功后显示 -->
+					<div class="ym-nBar-pop" data-dts="S2" style="display: none;">
+						<div class="ym-nBar-pop-icon">◆</div>
+						<div class="ym-nBar-pop-content">
+							<dl class="ym-nBar-pop-bd">
+								<dt>
+									<img width="80" height="80" src="../img/listImages/user_fake.jpg" alt="" class="responsive">
+								</dt>
+								<dd>
+									<p>
+										<a href="#" target="_blank" id="ym-nBar-nickName"></a>
+									</p>
+									<p>
+										<a href="#" target="_blank" class="btn btn-default btn-small fr">充值</a>
+										 账户余额：￥<span class="txt-red">0</span>
+									</p>
+									<a href="#" class="ym-nBar-pop-sign sign_up">签到赢积分</a>
+								</dd>
+							</dl>
+							<ul class="ym-nBar-pop-box"></ul>
+							<div class="ym-nBar-pop-privs">
+								<div class="ym-nBar-pop-privs-tit">特权：</div>
+								<a title="vip折扣" href="#" target="_blank" class="ym-nBar-privs-vip"></a> 
+								<a title="免费存酒" href="#" target="_blank" class="ym-nBar-privs-save"></a> 
+								<a title="免费杂志" href="#" target="_blank" class="ym-nBar-privs-maza"></a> 
+								<a title="每月红包" href="#" target="_blank" class="ym-nBar-privs-paper"></a> 
+								<a title="全国包邮" href="#" target="_blank" class="ym-nBar-privs-ship"></a> 
+								<a title="双倍积分" href="#" target="_blank" class="ym-nBar-privs-point"></a> 
+								<a title="品酒会" href="#" target="_blank" class="ym-nBar-privs-taste"></a> 
+								<a title="客服优先" href="#" target="_blank" class="ym-nBar-privs-first"></a> 
+								<a title="高级快递" href="#" target="_blank" class="ym-nBar-privs-adv"></a> 
+								<a title="高速退款" href="#" target="_blank" class="ym-nBar-privs-refund"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="ym-nBar-tab ym-nBar-tab-cart" style="top: 210.1px;">
+					<a href="javascript:;" target="_blank" data-dts="S8">
+						<div class="ym-nBar-cart-logo"></div>
+						<div class="ym-nBar-cart-txt">购物车</div>
+						<div class="ym-nBar-cart-num"><em>0</em></div>
+					</a>
+					<div class="ym-nBar-pop" style="margin-top: -129.5px;">
+						<div class="ym-nBar-pop-icon">◆</div>
+						<div class="shopcart-list">
+							<<!--div class="empty">您的购物车里没有任何商品，赶快去挑选商品吧！</div>-->
+						</div>
+					</div>
+				</div>
+				<div class="ym-nBar-tab ym-nBar-tab-asset" style="top: 330.1px;">
+					<a href="#" data-dts="S5" target="_blank">
+						<div class="ym-nBar-asset-logo"></div>
+					</a>
+					<div class="ym-nBar-pop ym-nBar-pop-tip">
+						我的资产
+						<div class="ym-nBar-pop-icon">◆</div>
+					</div>
+				</div>
+				<div class="ym-nBar-tab ym-nBar-tab-charge" style="top: 365.1px;">
+					<a href="#" data-dts="S6" target="_blank">
+						<div class="ym-nBar-charge-logo"></div>
+					</a>
+					<div class="ym-nBar-pop ym-nBar-pop-tip">
+						账户充值
+						<div class="ym-nBar-pop-icon">◆</div>
+					</div>
+				</div>
+				<!-- 在线客服 -->
+				<style>
+					.ym-nBar-chat-main>p{
+						width:180px;
+					}
+					.ym-nBar-chat-main>p>img{
+						max-width:180px;
+					}
+				</style>
+				<div class="ym-nBar-tab ym-nBar-tab-chat" style="top: 400.1px;">
+					<div class="ym-nBar-chat-logo"></div>
+					<div class="ym-new" style="display:none">0</div>
+					<div class="ym-nBar-pop consult" style="display: none; top: -218px;">
+						<div class="ym-nBar-pop-icon" style="bottom: 40px;">◆</div>
+						<div class="ym-nBar-pop-content">
+							<div class="ym-nBar-chat-head">
+								<h3 class="ym-nBar-chat-title">
+									<em></em>也买酒在线客服小也竭诚为您服务
+								</h3>
+								<div class="ym-nBar-chat-icon fr">
+									<a href="javascript:;" class="ym-nBar-chat-min">最小化</a>
+									<a href="javascript:;" class="ym-nBar-chat-close">关闭</a>
+								</div>
+							</div>
+							<div class="ym-nBar-chat-body">
+								<div class="ym-nBar-chat-cont" style="width: 335px; overflow: hidden; padding: 0px;"><div class="jspContainer" style="width: 335px; height: 200px;"><div class="jspPane" style="padding: 10px; top: 0px; width: 315px;"></div></div></div>
+								<div class="ym-nBar-chat-sendBox">
+									<div class="ym-nBar-chat-sendArea">
+										<div class="ke-container ke-container-simple" style="width: 295px;"><div style="display:block;" class="ke-toolbar" unselectable="on"><span class="ke-outline" data-name="emoticons" title="插入表情" unselectable="on"><span class="ke-toolbar-icon ke-toolbar-icon-url ke-icon-emoticons" unselectable="on"></span></span><span class="ke-outline" data-name="image" title="图片" unselectable="on"><span class="ke-toolbar-icon ke-toolbar-icon-url ke-icon-image" unselectable="on"></span></span></div><div style="display: block; height: 100px;" class="ke-edit"><iframe class="ke-edit-iframe" hidefocus="true" frameborder="0" style="width: 100%; height: 100px;" src="#"></iframe><textarea class="ke-edit-textarea" hidefocus="true" style="width: 100%; height: 100px; display: none;"></textarea></div><div class="ke-statusbar"><span class="ke-inline-block ke-statusbar-center-icon" style="visibility: hidden;"></span><span class="ke-inline-block ke-statusbar-right-icon" style="visibility: hidden;"></span></div></div><textarea id="editor_id" name="content" style="width: 295px; height: 100px; display: none;"></textarea>
+									</div>
+									<div class="ym-nBar-chat-sendBtn" style="width:275px;">
+										<a class="btn btn-primary btn-small mr10 endTalk" href="#">结束对话</a> <a class="btn btn-default btn-small postConsult" href="#">发送</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--<script type="text/javascript">
+					var editor;
+					KindEditor.ready(function(K) {
+						editor = K.create('textarea[name="content"]', {
+							resizeType : 0,
+							width : '295px',
+							minWidth : '295px',
+							height: '100px',
+							minHeight : '100px',
+							allowPreviewEmoticons : false,
+							allowImageUpload : true,
+							items : ['emoticons', 'image'],
+							themeType : 'simple',
+							uploadJson : 'http://www.yesmywine.com/consult/uploadImg.jspa',
+							imageTabIndex : 1,
+							allowImageRemote : false
+						});
+					});
+					$(document).ready(function(){
+						
+						$('.postConsult').click(function(){
+							editor.sync();
+							var text = $('#editor_id').val();
+							if(text == ''){
+								alert('请输入内容');
+								return;
+							}
+							if(text.length > 2000 ){
+								alert('输入内容过长');
+								return;
+							}
+							var html = $('#editor_id').val(); 
+							YM.dataproxy.ajax({
+								   type: "POST",
+								   url: "http://www.yesmywine.com/consult/postConsult.jspa",
+								   dataType: "html",
+								   data:{content:html,pageUrl:window.location.href},
+								   success: function(data){
+									   if(data.indexOf("ym-nBar-chat-mod")<=0){
+										   alert(data);
+									   }else{
+										   if($(".ym-nBar-chat-mod").length<=0){
+											   $(".jspPane").html(data);
+										   }else{
+											   $(".ym-nBar-chat-mod:last").after(data);
+											   reloadScroll();
+										   }
+										   editor.html("");
+									   }
+								   }
+							});
+						});
+						
+						$(".ym-nBar-chat-logo").click(function(){
+							if(!$('.ym-nBar-tab-chat .ym-nBar-pop').is(":visible")){
+								findConsults(true);
+							}
+						});
+						
+						newMessageRemind();
+						window.setInterval(newMessageRemind, 60000); 
+					});
+					
+					var scroll = $('.ym-nBar-chat-cont');
+					function reloadScroll(){
+						 reload();
+						 //这里调两次reload是为了图片下载完成后再重新初始化一下滚动条
+						 $(".ym-nBar-chat-main>p>img").load(function(){
+							 reload();
+						 });
+					} 
+					
+					function reload(){
+						scroll.data('jsp').reinitialise();
+						$('.jspScrollable,.jspContainer').width('315px');
+						$('.jspPane').width('275px');
+					 	scroll.data('jsp').scrollTo(0,100000);
+						editor.focus() ;
+					}
+					
+					function getNewConsults(){
+						if(($(".ym-nBar-pop").is(":visible"))){
+							YM.dataproxy.ajax({
+								   type: "POST",
+								   url: "http://www.yesmywine.com/consult/findNewConsults.jspa",
+								   dataType: "html",
+								   success: function(data){
+									   if($(".ym-nBar-chat-mod").length<=0){
+										   $(".jspPane").html(data);
+									   }else{
+										   if(data.length>0){
+											   $(".ym-nBar-chat-mod:last").after(data);
+											  // setTimeout('reloadScroll()',300);  
+											  reloadScroll();
+										   }
+									   }
+								   }
+							});
+						}
+					}
+					
+					function findConsults(isNewSession){
+						
+						YM.dataproxy.ajax({
+							   type: "POST",
+							   url: "http://www.yesmywine.com/consult/findConsults.jspa",
+							   dataType: "html",
+							   data:{"newSession":isNewSession},
+							   success: function(data){
+								 if(data == '-1'){
+									 YM.login.pop(function success(){
+										  window.location.reload(true);
+									   });
+								 }else{
+									 $('.ym-nBar-tab-chat .ym-nBar-pop').show();
+									 $(".jspPane").html(data);
+									 //setTimeout('reloadScroll()',300);  
+									 $(".ym-new").html(data).hide();
+									 reloadScroll();
+									 newConsult = setInterval(getNewConsults, 15000); 
+								 }
+							   }
+						}); 
+					}
+					
+					function getNewMessageCount(){
+						YM.dataproxy.ajax({
+							   type: "POST",
+							   url: "http://www.yesmywine.com/consult/getNewMessageCount.jspa",
+							   dataType: "html",
+							   success: function(data){
+								   if(data>0){
+									 //新消息闪烁
+									timer = setInterval(function(){
+												if(onOff){
+													$('.ym-nBar-chat-head').addClass('ym-nBar-chat-new');
+													onOff = !onOff;
+												}else{
+													$('.ym-nBar-chat-head').removeClass('ym-nBar-chat-new');
+													onOff = !onOff;
+												}
+									},1000);  
+								   }
+							   }
+						});
+					}
+					
+					function newMessageRemind(){
+						if(!$(".consult").is(":visible")){
+							YM.dataproxy.ajax({
+								type: "POST",
+								   url: "http://www.yesmywine.com/consult/getNewMessageCount.jspa",
+								   dataType: "html",
+								   success: function(data){
+									   if(data>0){
+											$(".ym-new").html(data).show();
+									   }else{
+										   $(".ym-new").html(data).hide();
+									   }
+								   }
+							}); 
+						}
+					}
+					
+					var flag = true;
+					var onOff = true;
+					var timer = null;
+					var newMessage = null;
+					var newConsult = null;
+					$('.ym-nBar-chat-min').click(function(){
+						$('.ym-nBar-chat-head:eq(0)').width($('.ym-nBar-chat-body').width());
+						var This = $(this);
+						if(flag){
+							//缩小窗口
+							$('.ym-nBar-chat-body,.ym-nBar-pop-icon').hide();
+							$('.ym-nBar-tab-chat .ym-nBar-pop').css({'top':'155px'});
+							This.addClass('ym-nBar-chat-max');
+							flag = !flag;
+							newMessage = setInterval(getNewMessageCount, 10000); 
+							clearInterval(newConsult);
+						}else{
+							//打开窗口
+							//清除闪烁
+							clearInterval(timer);
+							clearInterval(newMessage);
+							findConsults(false);
+							$('.ym-nBar-chat-head').removeClass('ym-nBar-chat-new');
+							$('.ym-nBar-tab-chat .ym-nBar-pop').css({'top':'-155px'});
+							$('.ym-nBar-chat-body,.ym-nBar-pop-icon').show();
+							This.removeClass('ym-nBar-chat-max');
+							flag = !flag;
+						}
+					});
+					
+					$(".ym-nBar-chat-close").click(function(){
+						$('.ym-nBar-tab-chat .ym-nBar-pop').hide();
+						clearInterval(timer);
+						clearInterval(newMessage);
+						clearInterval(newConsult);
+					});
+					
+					$(".endTalk").click(function(){
+						$('.ym-nBar-tab-chat .ym-nBar-pop').hide();
+						clearInterval(timer);
+						clearInterval(newMessage);
+						clearInterval(newConsult);
+					});
+					
+					$('.ym-nBar-tab-chat .ym-nBar-pop').hide();
+				
+			</script>-->
+				<div class="ym-nBar-tab ym-nBar-tab-valid" style="top: 435.1px;">
+					<div class="ym-nBar-valid-logo"></div>
+					<div class="ym-nBar-pop">
+						<div class="ym-nBar-pop-icon" style="bottom:28px;">◆</div>
+						<div class="ym-nBar-pop-content">
+							<dl id="initCnn" class="ym-nBar-valid-dl cnn">
+								<dt><img class="responsive" alt="也买认证" src="../img/listImages/authentication.jpg"></dt>
+								<dd>
+									<h2>也买酒商品真伪查询</h2>
+									<p>刮开酒瓶上防伪标签涂层，输入16位防伪码即可查询商品信息。</p>
+								</dd>
+							</dl>
+							<dl id="successCnn" class="ym-nBar-valid-dl" style="display:none; ">
+								<dt class="valid-succ"><em></em></dt>
+								<dd>
+									<h1>验证通过，您买到的是真品!</h1>
+								</dd>
+	              				<a class="btn-block validateBack" href="#">返  回</a>
+							</dl>
+							<dl id="failCnn" class="ym-nBar-valid-dl" style="display:none; ">
+								<dt class="valid-fail"><em></em></dt>
+								<dd>
+									<h1>系统中无此商品信息</h1>
+								</dd>
+							</dl>
+							<dl id="waitCnn" class="ym-nBar-valid-busy ym-nBar-valid-dl" style="display:none; ">
+								<dt class="valid-busy"><em></em></dt>
+								<dd>
+									<h1>目前查询人数过多，请稍后再试</h1>
+								</dd>
+	              				<a class="btn-block validateBack" href="#">返  回</a>
+							</dl>
+							<div id="doCnn" class="vaild-fail-cont" style="display:none; ">
+								<dd>
+	                	 			<p>1、返回重新查询。</p>
+									<p>2、拨打也买酒客服热线400-820-8060</p>
+									<p>3、发E-mail至：<a class="txt-blue" href="#">service@yesmywine.com</a></p>
+				              	</dd>
+	              				<a class="btn-block validateBack" href="#">返  回</a>
+							</div>
+							<div class="form-group">
+								<input id="cnnCode" type="text" class="form-txt">
+								<span class="error"></span>
+							</div>
+							<div class="form-group">
+								<div class="form-group-code">
+									<input id="validateCode" type="text" class="form-txt form-vaild mr10">
+									<img src="../img/listImages/code.png" width="80" height="36" alt="点击刷新" id="randPicCnn" class="mr10" scr="http://img11.yesmyimg.com/newWeb/images/global/1px.gif"> <a href="javascript:void(0)" onclick="javascript:$(&#39;#randPicCnn&#39;).click();" class="txt-blue">换一张</a>
+								</div>
+								<span class="error"></span>
+							</div>
+							<div class="form-group">
+								<a id="validateCnn" class="btn btn-default btn-block" href="#">查  询</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="ym-nBar-tab ym-nBar-tab-qrcode">
+					<div class="ym-nBar-qrcode-logo"></div>
+					<div class="ym-nBar-pop">
+						<div class="ym-nBar-pop-icon">◆</div>
+						<div class="ym-nBar-pop-qrcode">
+							<img src="../img/listImages/code.png" alt="二维码">
+						</div>
+					</div>
+				</div>
+				<div class="ym-nBar-tab ym-nBar-tab-backtop" style="display: none;">
+				<div class="ym-nBar-backtop-logo"></div>
+			</div>
+			</div>
+			<div class="ym-nBar-pop ym-nBar-pop-login">
+				<div class="ym-nBar-pop-icon">◆</div>
+				<div class="ym-nBar-pop-content"></div>
+			</div>
+		</div>
+		<!-- nBar 侧栏 end -->
+		
+		<!-- 购物车 -->
+		<script type="text/javascript" src="../js/cartFly/jquery.cookie.js" ></script>
+		<script type="text/javascript" src="../js/cartFly/jquery.fly.js" ></script>
+	</body>
+	<script src="../js/common.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/details.js" type="text/javascript" charset="utf-8"></script>
+</html>
