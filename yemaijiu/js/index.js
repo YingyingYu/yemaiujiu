@@ -749,7 +749,7 @@ function IsShowCartFooter(){
 	
 	var _h = $(window).height();//获取可视高度
 	var _st = $(document).scrollTop();//获取滚动条离顶部的高度
-//	console.log(_st);
+
 	if(_st >= _h){
 		$("#util-floattop .head-shopcart a.btn-shopcart").css("display","block");
 	}else{
