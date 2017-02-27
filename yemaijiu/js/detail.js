@@ -8,6 +8,12 @@ function AddShopCartMain(){
 		window.location.href = "showCart.html";
 	});
 	
+	//随时获取滚动高度
+	var _st = "";
+	$(window).scroll(function(e){
+		_st = $(document).scrollTop();
+	});
+	
 	//给“加入购物车”按钮添加点击事件
 	$(".particulars .par_right .par_place .join").click(function(e){
 		var _url = window.location.href;
@@ -72,7 +78,7 @@ function AddShopCartMain(){
 				left : e.clientX
 			},
 			end : {
-				top : $(".ym-nBar .ym-nBar-tabs .ym-nBar-tab-cart a .ym-nBar-cart-num em").offset().top,
+				top : $(".ym-nBar .ym-nBar-tabs .ym-nBar-tab-cart a .ym-nBar-cart-num em").offset().top-_st,
 				left : $(".ym-nBar .ym-nBar-tabs .ym-nBar-tab-cart a .ym-nBar-cart-num em").offset().left,
 				width : 0,
 				height : 0

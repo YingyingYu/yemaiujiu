@@ -181,9 +181,9 @@ function LoginSuccess(){
 		
 		var _reg =  new RegExp(/\d+/g);
 		var _reg2 = new RegExp(/^\d+$/g);
-		var _reg3 = new RegExp(/^b$/g);
+		var _reg3 = new RegExp(/[b]/g);
 		data.lastIndex = 0;
-		
+
 		if(_reg3.test(String(data)) == true){
 			data.lastIndex = 0;
 			data = data.split("<br />")[2];

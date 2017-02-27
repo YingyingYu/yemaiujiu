@@ -444,6 +444,12 @@ function AddShopCartPaging(){
 		window.location.href = "showCart.html";
 	});
 	
+	//随时获取滚动高度
+	var _st = "";
+	$(window).scroll(function(e){
+		_st = $(document).scrollTop();
+	});
+	
 	//给“加入购物车”按钮添加点击事件
 	$(".main .goods #goodList .piclist .list-item dl dd.action p a.btn-add2cart").click(function(e){
 		//获取商品的 id (用来区分不同的商品)
@@ -506,7 +512,7 @@ function AddShopCartPaging(){
 				left : e.clientX
 			},
 			end : {
-				top : $(".ym-nBar .ym-nBar-tabs .ym-nBar-tab-cart a .ym-nBar-cart-num em").offset().top,
+				top : $(".ym-nBar .ym-nBar-tabs .ym-nBar-tab-cart a .ym-nBar-cart-num em").offset().top-_st,
 				left : $(".ym-nBar .ym-nBar-tabs .ym-nBar-tab-cart a .ym-nBar-cart-num em").offset().left,
 				width : 0,
 				height : 0
