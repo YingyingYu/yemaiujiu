@@ -303,7 +303,7 @@ function IsShopCartSlide(){
 //侧栏
 function SiderBar(){
 	
-	//也买酒商品真伪查询
+	//也买酒商品真伪查询 11111
 	
 	
 }
